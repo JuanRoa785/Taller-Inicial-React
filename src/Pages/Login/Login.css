@@ -1,0 +1,85 @@
+#login-Card-Container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    height: fit-content;
+    align-self: top;
+    justify-content: center;
+}
+
+.nav-item {
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: #FA8232;
+}
+
+#tabLeft {
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#tabRight {
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Estilos Iniciar Sesión*/
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+    color: #FA8232;
+    font-size: 20px;
+}
+
+.form-control {
+    padding-left: 10px !important;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #FA8232;
+}
+
+.login-btn {
+    background-color: #FA8232;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    height: fit-content;
+    padding: 2px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: rgba(27, 99, 146, 1);
+}
+
+.otherButton {
+    background-color: white;
+    color: rgba(138, 129, 129, 0.849);
+    border: 1px solid rgb(214, 212, 212);
+}
+
+.otherButton > i {
+    align-self: flex-start;
+}
+
+.otherButton:hover {
+    color: #FA8232;
+    background-color: white;
+    border: solid 1px gray;
+}
