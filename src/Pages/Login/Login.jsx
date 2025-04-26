@@ -97,6 +97,10 @@ function LoginPage() {
                                 return;
                             }
 
+                            if (errEmail || errPassword) {
+                                return;
+                            }
+
                             if (formData.logEmail == defaultAuthValues.correo && formData.logPassword == defaultAuthValues.password) {
                                 login();
                                 navigate("/");
