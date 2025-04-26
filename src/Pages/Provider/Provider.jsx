@@ -10,6 +10,16 @@ function ProviderPage(){
         return `${year}-${month}-${day}`;
     };
 
+    const stateColor = (estado) => {
+        if (estado == 'Completado') {
+            return 'green';
+        } else if (estado == 'Pendiente') {
+            return 'orange';
+        } else {
+            return 'red';
+        }
+    }
+
     const [startDate, setStartDate] = useState(defaultDate);
     
     const orders = [
@@ -17,7 +27,7 @@ function ProviderPage(){
         { id: 102, nombre: "Andrés Herrera", estado: "Pendiente", fecha: "2025-04-22", total: "85000" },
         { id: 103, nombre: "Mariana López", estado: "Cancelado", fecha: "2025-04-10", total: "0" },
         { id: 104, nombre: "Julián Castro", estado: "Completado", fecha: "2025-04-18", total: "120000" },
-        { id: 105, nombre: "Camila Vargas", estado: "En Proceso", fecha: "2025-04-23", total: "60000" },
+        { id: 105, nombre: "Camila Vargas", estado: "Pendiente", fecha: "2025-04-23", total: "60000" },
         { id: 106, nombre: "Santiago Ríos", estado: "Completado", fecha: "2025-04-19", total: "45000" },
         { id: 107, nombre: "Isabella Guzmán", estado: "Pendiente", fecha: "2025-04-24", total: "70000" },
         { id: 108, nombre: "Felipe Martínez", estado: "Completado", fecha: "2025-04-21", total: "110000" }
@@ -56,7 +66,8 @@ function ProviderPage(){
                                     <input
                                         type="date"
                                         className="form-control form__input"
-                                        defaultValue="2025-04-25"
+                                        value={startDate}
+                                        onChange={(e) => setStartDate(e.target.value)}
                                         name="datePicker1"
                                         style={{width: '100px', paddingLeft: '10px'}}
                                     />
@@ -81,7 +92,7 @@ function ProviderPage(){
                                 <tr key={order.id}>
                                     <td>{order.id}</td>
                                     <td>{order.nombre}</td>
-                                    <td>{order.estado}</td>
+                                    <td style={{color: stateColor(order.estado)}}>{order.estado.toLocaleUpperCase()}</td>
                                     <td>{order.fecha}</td>
                                     <td>$ {order.total.toLocaleString('es-CO')} COP</td>
                                     <td><a className="details-link"><i class="bi bi-plus-circle"></i> Info</a></td>
