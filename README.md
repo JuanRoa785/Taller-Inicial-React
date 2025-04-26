@@ -5,6 +5,10 @@
 Este pequeño repositorio representa un primer acercamiento a la creación de un sitio web, específicamente un <strong>Ecommerce</strong>, utilizando <b><code>React</code></b> y <b><code>Vite</code></b>. Inicialmente, el objetivo era implementar un sistema de navegación básico mediante un <code>Header</code> y el paquete <code>react-router-dom</code>. Sin embargo, al reutilizar el frontend desarrollado para la primera entrega del proyecto final del curso, se decidió ir un paso más allá. Como resultado, se incorporó un <strong>login estático</strong> y el <strong>mapeo de datos</strong> almacenados en arreglos, con el fin de mejorar la experiencia visual del sitio y hacerlo más interactivo.
 </p>
 
+## ✅ Software en Ejecución
+![Software en Ejecución](assetsTaller/Software%20en%20Ejecucion.gif)
+
+
 ## 🧩 Tecnologías utilizadas
 | Componente  | Tecnología | Descripción|
 |------------ |------------|------------|
@@ -279,6 +283,11 @@ npm run dev
 ### Detener el servidor:
 - **Cerrar la consola donde se está ejecutando el `npm run dev`**
 - **Ctrl + C**
-- **Apagar el PC** 
+- **Apagar el PC**
 
-## ✅ Software en Ejecución
+## Créditos y Código Fuente Original
+<p align="justify">Este proyecto fue adaptado a partir de un código similar desarrollado por Juan Diego Roa, Kevin Dannie Guzman, entre otros para la asignatura de <b>Entornos de Programación</b> de la <b>Universidad Industrial de Santander</b>:</p>
+
+🔗 [Kevin2211875/not-an-ebook](https://github.com/Kevin2211875/not-an-ebook.git)
+
+Se realizaron modificaciones a esa versión original para adaptarla a los requerimientos específicos de este taller.
