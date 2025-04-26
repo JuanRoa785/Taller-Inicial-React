@@ -6,7 +6,9 @@ Este pequeño repositorio representa un primer acercamiento a la creación de un
 </p>
 
 ## ✅ Software en Ejecución
-![Software en Ejecución](assetsTaller/Software%20en%20Ejecucion.gif)
+<p align="center">
+  <img src="assetsTaller/Software%20en%20Ejecucion.gif" alt="Software en Ejecución" width="850"/>
+</p>
 
 
 ## 🧩 Tecnologías utilizadas
@@ -288,6 +290,6 @@ npm run dev
 ## Créditos y Código Fuente Original
 <p align="justify">Este proyecto fue adaptado a partir de un código similar desarrollado por Juan Diego Roa, Kevin Dannie Guzman, entre otros para la asignatura de <b>Entornos de Programación</b> de la <b>Universidad Industrial de Santander</b>:</p>
 
-🔗 [Kevin2211875/not-an-ebook](https://github.com/Kevin2211875/not-an-ebook.git)
+🔗 [Kevin2211875/Not-An-Ebook](https://github.com/Kevin2211875/not-an-ebook.git)
 
 Se realizaron modificaciones a esa versión original para adaptarla a los requerimientos específicos de este taller.
