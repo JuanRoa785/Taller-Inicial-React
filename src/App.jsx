@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginPage from './Pages/Login/Login.jsx'
 import ClientPage from './Pages/Client/Client.jsx'
 import ProviderPage from './Pages/Provider/Provider.jsx'
-import UserPages from './Pages/User/User.jsx'
+import UsersPage from './Pages/User/User.jsx'
 import Layout from './Layout.jsx'
 import HomePage from './Pages/Home/Home.jsx'
 
@@ -22,15 +22,13 @@ function App() {
         { path: '/login', element: <LoginPage /> },
         { path: '/clients', element: isLoggedIn ? <ClientPage /> : <LoginPage /> },
         { path: '/providers', element: isLoggedIn ? <ProviderPage /> : <LoginPage /> },
-        { path: '/users', element: isLoggedIn ? <UserPages /> : <LoginPage />}
+        { path: '/users', element: isLoggedIn ? <UsersPage /> : <LoginPage />}
       ]
     }
   ]);
 
   return (
-    <>
-        <RouterProvider router={router}/>
-    </>
+        <RouterProvider router={router} />
   )
 }
 
