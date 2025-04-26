@@ -267,16 +267,18 @@ npm install
 ### Iniciar el servidor:
 ```bash
 npm run dev
-#Acceder al puerto que te indique, normalmente el 5173 (http://localhost:5173/)
+#Acceder al puerto que se indique, normalmente el 5173 (http://localhost:5173/)
 ```
+![image](https://github.com/user-attachments/assets/916c2ab3-701a-4614-98e3-ff6aa0ba622f)
 
 ### Credenciales de acceso:
-> **Correo Electrónico**: admin@admin.com
+> **Correo Electrónico**: **admin@admin.com**
 
-> **Contraseña**: adminadmin
+> **Contraseña**: **adminadmin**
 
 ### Detener el servidor:
-- **Cerrar la consola o Apagar el PC**
+- **Cerrar la consola donde se está ejecutando el `npm run dev`**
 - **Ctrl + C**
+- **Apagar el PC** 
 
 ## ✅ Software en Ejecución
