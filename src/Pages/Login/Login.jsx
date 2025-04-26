@@ -71,7 +71,7 @@ function LoginPage() {
                         <div className="mb-3">
                             <p className="form-label">Correo Electronico</p>
                             <input type="text" onChange={handleChange} className="form-control" placeholder="Digite su email aquí"
-                                name="logEmail" autoComplete="email"/>
+                                name="logEmail" autoComplete="off"/>
                             <p id="email-error-login" style={{display: errEmail ? 'flex': 'none', color: 'red', fontWeight: 500}}>
                                 * El correo Electronico no es valido *
                             </p>

@@ -43,7 +43,7 @@ function Header() {
 
                     <div className="buscador">
                         <div className="input-group">
-                            <input type="search" id="barra-busqueda" className="form-control" placeholder="¡Busca tu libro aquí!" aria-label="Search" aria-describedby="search-addon" />
+                            <input type="search" id="barra-busqueda" className="form-control" placeholder="¡Busca tu libro aquí!" aria-label="Search" aria-describedby="search-addon" autoComplete='off' />
                             <button id="btn-buscar-libro" type="button" className="btn"> <i className="bi bi-search icon-large"></i> </button>
                         </div>
                     </div>
